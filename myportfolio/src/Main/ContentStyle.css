@@ -1,0 +1,14 @@
+.mainContent {
+  width: 100%;
+  height: 100vh;
+  padding-top: 6rem;
+  background: var(--darkBlue);
+}
+/* --------------Mobile------------ */
+@media screen and (max-width: 660px) {
+  .mainContent {
+    width:100%;
+    height:100%;
+    padding-top: 8rem;
+  }
+}

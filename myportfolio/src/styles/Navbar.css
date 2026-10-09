@@ -1,0 +1,116 @@
+.Navbar {
+  position: fixed;
+  top: 0.5rem;
+  width: 98%;
+  height: 80px;
+  background: var(--darkGrda);
+  border-radius: 3rem;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: var(--glassShadow);
+  backdrop-filter: blur(30px);
+  header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .logo {
+      flex: 0.5;
+      font-weight: 900;
+      font-size: 20px;
+      p {
+        text-shadow: var(--textShadow);
+        color: var(--lghtBluea);
+        font-size: 25px;
+      }
+    }
+    .link {
+      flex: 1;
+      display: flex;
+      gap: 2rem;
+      width: 100%;
+      justify-content: center;
+      a {
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: 700;
+        color: var(--lghtfontClr);
+        padding: 10px;
+        transition:
+          opacity 0.8s,
+          translate 0.8s;
+        transition-delay: calc(0.3s * sibling-Index());
+        @starting-style {
+          opacity: 0;
+          translate: 30px 0;
+        }
+        &:hover {
+          text-shadow: var(--textShadow);
+          color: var(--lghtfontClr);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .Navbar {
+    position: fixed;
+    top: 0.5rem;
+    width: 80%;
+    height: 80px;
+    background: var(--darkGrda);
+    border-radius: 3rem;
+    margin: auto;
+    padding: 10px;
+    box-shadow: var(--glassShadow);
+    backdrop-filter: blur(30px);
+    header {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+
+      .logo {
+        flex: auto;
+        font-weight: 900;
+        p {
+          text-shadow: var(--textShadow);
+          color: var(--lghtBluea);
+          font-size: 20px;
+        }
+      }
+      .link {
+        flex: 1;
+        display: flex;
+        gap: 5px;
+        width: 100%;
+        justify-content: center;
+
+        .no-mobi {
+          display: none;
+        }
+
+        a {
+          text-decoration: none;
+          font-family: sans-serif;
+          font-weight: 700;
+          color: var(--lghtfontClr);
+          transition:
+            opacity 0.8s,
+            translate 0.8s;
+          transition-delay: calc(0.3s * sibling-Index());
+          @starting-style {
+            opacity: 0;
+            translate: 30px 0;
+          }
+          &:hover {
+            text-shadow: var(--textShadow);
+            color: var(--lghtfontClr);
+          }
+        }
+      }
+    }
+  }
+}
