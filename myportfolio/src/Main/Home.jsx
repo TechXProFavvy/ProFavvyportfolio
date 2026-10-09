@@ -1,7 +1,15 @@
 import "../styles/AppHome.css";
+import { Link } from "react-router-dom";
 import myphoto from "../assets/myphoto.jpeg";
 import Nobgmyphoto from "../assets/nobgmyphoto.png";
-import {MdFacebook, MdInstallDesktop, MdLiveTv, MdWhatsapp, MdYoutubeSearchedFor} from "react-icons/md"
+import {
+  MdFacebook,
+  MdInstallDesktop,
+  MdLiveTv,
+  MdMessage,
+  MdWhatsapp,
+  MdYoutubeSearchedFor,
+} from "react-icons/md";
 export const Home = () => {
   return (
     <main className="home">
@@ -15,7 +23,7 @@ export const Home = () => {
             business grow.
           </p>
         </section>
-        
+
         <section className="intro-text brief">
           <h2> Brief About</h2>
           <p>
@@ -27,13 +35,22 @@ export const Home = () => {
         <section className="intro-text icons">
           <h2>Contact Me</h2>
           <div className="social-icons">
-          <span><MdFacebook className="social" size={"30px"}/></span>
-          <span><MdWhatsapp className="social" size={"30px"}/></span>
-          <span><MdLiveTv className="social" size={"30px"}/></span>
+            <span>
+              <MdFacebook className="social" size={"30px"} />
+            </span>
+            <span>
+              <MdWhatsapp className="social" size={"30px"} />
+            </span>
+            <span>
+              <MdLiveTv className="social" size={"30px"} />
+            </span>
+            <span>
+              <Link to="/contact">
+                <MdMessage className="social" size={"27px"} />
+              </Link>
+            </span>
           </div>
-          
         </section>
-
       </section>
 
       <section className="image">
