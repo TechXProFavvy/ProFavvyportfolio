@@ -1,35 +1,34 @@
-:root{
-  --darkBlue:#010736;
-  --medBlue:#0d1c42;
-  --lghtBlue:#2239cf;
-  --lghtBluea:#fcf1d0;
-  --darkGrd:linear-gradient(to bottom left,#010736,#000a);
-  --darkGrda:linear-gradient(to left,#01073622,#0006);
-  --glassShadow:0px 8px 32px rgba(0,0,0,0.2);
-  --cardShadow:0px 2px 2px rgba(0,0,0,0.2);
-  --innerShadow:0px 2px 5px inset rgba(0,0,0,0.06);
-  --lghtGrd:linear-gradient(to left,#b8bcfdaa,#eeeff1cc); 
-  --textShadow:0px 2px 14px rgba(200,100,190),0px -2px 8px rgb(255, 175, 55),0px 2px 14px rgba(220,200,10)
-  ;
-  --darkfontClr:#000;
-  --lghtfontClr:#f0ebeb;
-  --green:#0d3a;
-  --lghtHover:rgba(242, 252, 255, 0.6);
-  --darkHover:rgba(241, 57, 143, 0.6);
+:root {
+  --darkBlue: #010736;
+  --medBlue: #0d1c42;
+  --lghtBlue: #2239cf;
+  --lghtBluea: #fcf1d0;
+  --darkGrd: linear-gradient(to bottom left, #010736, #000a);
+  --darkGrda: linear-gradient(to left, #01073622, #0006);
+  --glassShadow: 0px 8px 32px rgba(0, 0, 0, 0.2);
+  --cardShadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  --innerShadow: 0px 2px 5px inset rgba(0, 0, 0, 0.06);
+  --lghtGrd: linear-gradient(to left, #b8bcfdaa, #eeeff1cc);
+  --textShadow:
+    0px 2px 14px rgba(200, 100, 190), 0px -2px 8px rgb(255, 175, 55),
+    0px 2px 14px rgba(220, 200, 10);
+  --darkfontClr: #000;
+  --lghtfontClr: #f0ebeb;
+  --green: #0d3a;
+  --lghtHover: rgba(242, 252, 255, 0.6);
+  --darkHover: rgba(241, 57, 143, 0.6);
 }
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-body{
+body {
   display: flex;
   flex-direction: column;
-  width:100%;
+  width: 100%;
   height: 100%;
   overflow: hidden;
   background: var(--darkBlue);
- 
 }
