@@ -2,12 +2,13 @@
   --darkBlue: #010736;
   --medBlue: #0d1c42;
   --lghtBlue: #2239cf;
-  --lghtBluea: #fcf1d0;
+  --lghtBluea: #132255a2;
+  --lghtBluea2: #ffffff;
   --darkGrd: linear-gradient(to bottom left, #010736, #000a);
   --darkGrda: linear-gradient(to left, #01073622, #0006);
   --glassShadow: 0px 8px 32px rgba(0, 0, 0, 0.2);
   --cardShadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-  --innerShadow: 0px 2px 5px inset rgba(0, 0, 0, 0.06);
+  --innerShadow: 0px 2px 4px inset rgba(0, 0, 0, 0.06);
   --lghtGrd: linear-gradient(to left, #b8bcfdaa, #eeeff1cc);
   --textShadow:
     0px 2px 14px rgba(200, 100, 190), 0px -2px 8px rgb(255, 175, 55),
@@ -16,7 +17,8 @@
   --lghtfontClr: #f0ebeb;
   --green: #0d3a;
   --lghtHover: rgba(242, 252, 255, 0.6);
-  --darkHover: rgba(241, 57, 143, 0.6);
+  --darkHover:#132255;
+  --bgLght:#f0f8ff;
 }
 * {
   margin: 0;

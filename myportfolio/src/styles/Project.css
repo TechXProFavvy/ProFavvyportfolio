@@ -1,0 +1,17 @@
+.project{
+    width:100%;
+    height:100vh;
+    padding:1rem;
+    background-color: var(--bgLght);
+}
+
+
+/* -------------Mobile view-------------- */
+
+@media  screen and (max-width:660px) {
+    .project{
+        width:100%;
+        height:90vh;
+    }
+    
+}

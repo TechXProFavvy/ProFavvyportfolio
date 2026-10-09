@@ -20,7 +20,7 @@
       font-size: 20px;
       p {
         text-shadow: var(--textShadow);
-        color: var(--lghtBluea);
+        color: var(--lghtBluea2);
         font-size: 25px;
       }
     }
