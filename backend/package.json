@@ -15,7 +15,10 @@
   "type": "module",
   "main": "App.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon App.js",
+    "startDev": "node --watch --trace-warnings App.js",
+    "startProd": "node App.js"
   },
   "dependencies": {
     "express": "^5.3.0",

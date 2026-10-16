@@ -8,7 +8,7 @@ const Schema = mongoose.Schema(
     phone: String,
     message: String,
   },
-  { TimeStamps: true },
+  { timestamps: true },
 );
 
 export const MessageModel = new mongoose.model("Messages", Schema);

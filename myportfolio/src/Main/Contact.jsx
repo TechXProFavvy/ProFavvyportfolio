@@ -9,7 +9,9 @@ import {
 import { Link } from "react-router-dom";
 import "../styles/Contact.css";
 import { useState } from "react";
+import { toast } from "react-toastify";
 export const Contact = () => {
+  const [loading, setLoading] = useState(false);
   const [formDetails, setFormDetails] = useState({
     date_appoint: "",
     Contactor: "",
@@ -25,15 +27,32 @@ export const Contact = () => {
       [name]: value,
     }));
   };
-  const cur_Year = new Date().getFullYear();
-  const cur_Month = new Date().getMonth();
-  const cur_Day = new Date().getDay();
-  let combineDate = `${cur_Year}-0${cur_Month}-0${cur_Day}`;
+
+  const postForm = async (e) => {
+    e.preventDefault();
+    if (!formDetails.date_appoint || !formDetails.phone || !formDetails.email)
+      return toast.error("Please complete the form");
+    try {
+      let res = await fetch("http://localhost:7900/message", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formDetails),
+      });
+
+      if (!res.ok) return toast.error("Try again");
+
+      toast.success("Message sent successfully!");
+      let data = await res.json();
+      console.log(data);
+    } catch (error) {
+      console.error(`Fetch Failed ${error}`);
+    }
+  };
 
   return (
     <div className="contact">
       <div className="form">
-        <form>
+        <form className="myContactForm">
           <section>
             <h1>Send a message</h1>
           </section>
@@ -83,12 +102,7 @@ export const Contact = () => {
             ></textarea>
           </section>
           <section>
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-                localStorage.setItem("Messages", JSON.stringify(formDetails));
-              }}
-            >
+            <button onClick={postForm}>
               Send <FaPaperPlane />
             </button>
           </section>

@@ -1,3 +1,10 @@
-import express from 'express'
+import express from "express";
+import {
+  getAllMessages,
+  postMessage,
+} from "../Controllers/MessageControllers.js";
 
-export const router = express.Router()
+export const router = express.Router();
+
+router.get("/", getAllMessages);
+router.post("/", postMessage);

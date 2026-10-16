@@ -37,7 +37,7 @@ export const Login = () => {
   };
   return (
     <div className="login-form">
-      <form>
+      <form className="login-field">
         <h1>Welcome!</h1>
         <section className="form-field">
           <div className="input">
