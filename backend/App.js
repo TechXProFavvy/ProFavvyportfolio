@@ -4,6 +4,7 @@ import session from "express-session";
 
 export const app = express();
 export const PORT = process.env.PORT || 7800;
+export const MONGO_URI = process.env.MONGO_URI;
 
 app.use(
   cors({
