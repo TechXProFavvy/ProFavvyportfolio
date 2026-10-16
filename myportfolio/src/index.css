@@ -19,6 +19,8 @@
   --lghtHover: rgba(242, 252, 255, 0.6);
   --darkHover:#132255;
   --bgLght:#f0f8ff;
+  --emojiYellow:#ffde34;
+  --lghtHover:#414b6ba2;
 }
 * {
   margin: 0;
@@ -33,4 +35,5 @@ body {
   height: 100%;
   overflow: hidden;
   background: var(--darkBlue);
+ 
 }
