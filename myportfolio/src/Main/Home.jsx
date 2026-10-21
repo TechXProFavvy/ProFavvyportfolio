@@ -13,6 +13,10 @@ import {
 
 
 export const Home = () => {
+
+
+
+
   return (
     <main className="home">
       
@@ -39,13 +43,23 @@ export const Home = () => {
             <h2>Contact Me</h2>
             <div className="social-icons">
               <span title="facebook">
+                <a href="https://www.facebook.com/profile.php?id=61589519475662" target="_blank" 
+        rel="noopener noreferrer">
+                
                 <MdFacebook className="social" size={"30px"} />
+                </a>
               </span>
               <span title="Whatsapp">
+                <a href="https://wa.me/+2349068241479"  target="_blank" 
+        rel="noopener noreferrer">
                 <MdWhatsapp className="social" size={"30px"} />
+                </a>
               </span>
               <span title="Youtube">
+                <a href="www.youtube.com/@Favourlenu" target="_blank" 
+        rel="noopener noreferrer"> 
                 <MdLiveTv className="social" size={"30px"} />
+                </a>
               </span>
               <span title="message me">
                 <Link to="/contact">
