@@ -30,23 +30,24 @@ export const Contact = () => {
 
   const postForm = async (e) => {
     e.preventDefault();
-    if (!formDetails.date_appoint || !formDetails.phone || !formDetails.email)
-      return toast.error("Please complete the form");
-    try {
-      let res = await fetch("http://localhost:7900/message", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formDetails),
-      });
+    toast.info("Coming Soon")
+    // if (!formDetails.date_appoint || !formDetails.phone || !formDetails.email)
+    //   return toast.error("Please complete the form");
+    // try {
+    //   let res = await fetch("http://localhost:7900/message", {
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify(formDetails),
+    //   });
 
-      if (!res.ok) return toast.error("Try again");
+    //   if (!res.ok) return toast.error("Try again");
 
-      toast.success("Message sent successfully!");
-      let data = await res.json();
-      console.log(data);
-    } catch (error) {
-      console.error(`Fetch Failed ${error}`);
-    }
+    //   toast.success("Message sent successfully!");
+    //   let data = await res.json();
+    //   console.log(data);
+    // } catch (error) {
+    //   console.error(`Fetch Failed ${error}`);
+    // }
   };
 
   return (
